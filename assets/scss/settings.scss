@@ -1,0 +1,31 @@
+// Import only what you need from foundation-sites
+@import 'foundation-sites/scss/util/util';
+
+// Global variables
+$global-flexbox: true;
+$global-font-size: 16px;
+$global-width: rem-calc(1200);
+$global-lineheight: 1.5;
+$primary-color: #1779ba;
+$secondary-color: #767676;
+$body-background: #fefefe;
+$body-font-color: #0a0a0a;
+
+// Import Foundation components
+@import 'foundation-sites/scss/grid/grid';
+@import 'foundation-sites/scss/typography/typography';
+@import 'foundation-sites/scss/forms/forms';
+@import 'foundation-sites/scss/components/visibility';
+@import 'foundation-sites/scss/components/float';
+@import 'foundation-sites/scss/components/button';
+@import 'foundation-sites/scss/components/flex';
+
+// Include Foundation components
+@include foundation-global-styles;
+@include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-forms;
+@include foundation-button;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-flex-classes;
